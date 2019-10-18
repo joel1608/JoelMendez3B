@@ -27,7 +27,7 @@ namespace ejerciciosPoo
                 {
                     Console.Clear();
                     Console.ForegroundColor = ConsoleColor.Green;
-                    Console.WriteLine("MENÚ");
+                    Console.WriteLine("                         MENÚ");
                     Console.WriteLine(" ");
                     Console.WriteLine("(1) Ejercicio 1      (2) Ejercicio 2     (3) Ejercicio 3 ");
                     Console.WriteLine("");
@@ -35,7 +35,7 @@ namespace ejerciciosPoo
                     Console.WriteLine("");
                     Console.WriteLine("(7) Ejercicio 7      (8) Ejercicio 8     (9) Ejercicio 9 ");
                     Console.WriteLine("");
-                    Console.WriteLine("(10) Ejercicio 10        (11) Salir");
+                    Console.WriteLine("(10) Ejercicio 10    (11) Salir");
                     Console.WriteLine("");
 
                     int n = int.Parse(Console.ReadLine());
