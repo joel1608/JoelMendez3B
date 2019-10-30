@@ -15,20 +15,8 @@ namespace Pila_Cola.clases
             bool ben = true;
             do
             {
-                Console.Clear();
-
-
-                Console.WriteLine("                           MENU");
-                Console.WriteLine("------------------------------------------------------------------");
-                Console.WriteLine(" 1) Apilar");
-                Console.WriteLine(" 2) Desapilar");
-                Console.WriteLine(" 3) Mirar cima");
-                Console.WriteLine(" 4) Salir");
-                int opcion = int.Parse(Console.ReadLine());
-
-
-
-                switch (opcion)
+                int valor = Menu();
+                switch (valor)
                 {
                     case 1:
                         Console.WriteLine("Ingrese un numero");
@@ -48,20 +36,21 @@ namespace Pila_Cola.clases
                 }
             } while (ben);
 
-            mipila.Push (6);
-            mipila.Push (5);
-            mipila.Push (9);
-            mipila.Push (3);
+            int Menu()
+            {
+                Console.Clear();
 
-            Console.WriteLine(mipila.Peek());
-            Console.WriteLine(" ");
 
-            mipila.Pop();
+                Console.WriteLine("                           MENU");
+                Console.WriteLine("------------------------------------------------------------------");
+                Console.WriteLine(" 1) Apilar");
+                Console.WriteLine(" 2) Desapilar");
+                Console.WriteLine(" 3) Mirar cima");
+                Console.WriteLine(" 4) Salir");
+                int opcion = int.Parse(Console.ReadLine());
+                return opcion;
+            }
 
-            Console.WriteLine(" ");
-            Console.WriteLine(mipila.Peek());
-
-            Console.ReadKey();
         }
          
         

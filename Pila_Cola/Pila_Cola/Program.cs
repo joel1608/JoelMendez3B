@@ -18,30 +18,47 @@ namespace Pila_Cola
             Console.ForegroundColor = ConsoleColor.Green;
             do
             {
-                Console.Clear();
-                
+                int valor;
+                valor = Menu();
 
-            Console.WriteLine("                           MENU");
-            Console.WriteLine("------------------------------------------------------------------");
-            Console.WriteLine(" 1) Ejercicio Pila");
-            Console.WriteLine(" 2) Ejercicio Cola");
-            Console.WriteLine(" 3) Salir");
-            int opcion=int.Parse(Console.ReadLine());
-            
 
-            
-                switch (opcion)
+
+                switch (valor)
                 {
                     case 1: pila.ejerciciopila(); break;
                     case 2: cola.ejerciciocola(); break;
-                    case 3: ban = false;break; 
-                    default: Console.WriteLine("Escoja la opción correcta");
+                    case 3: ban = false; break;
+                    default:
+                        Console.WriteLine("Escoja la opción correcta");
                         Console.ReadKey();
                         break;
                 }
             } while (ban);
 
-            Console.ReadKey();
+             int Menu()
+            {
+                Console.Clear();
+                int opcion;
+
+                Console.WriteLine("                           MENU");
+                Console.WriteLine("------------------------------------------------------------------");
+                Console.WriteLine(" 1) Ejercicio Pila");
+                Console.WriteLine(" 2) Ejercicio Cola");
+                Console.WriteLine(" 3) Salir");
+                opcion = int.Parse(Console.ReadLine());
+                return opcion;
+
+
+
+            }
         }
+        
+        
     }
-}
+
+            
+ }
+        
+
+           
+

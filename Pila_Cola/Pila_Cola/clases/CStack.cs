@@ -37,7 +37,7 @@ namespace Pila_Cola.clases
         {
             int valor = 0;
 
-            if (ancla.Siguiente!=null)
+            if (ancla.Siguiente != null)
             {
                 trabajo = ancla.Siguiente;
                 valor = trabajo.Dato;
@@ -50,13 +50,13 @@ namespace Pila_Cola.clases
 
         public int Peek()
         {
-            int valor =0;
+            int valor = 0;
             if (ancla.Siguiente != null)
             {
                 trabajo = ancla.Siguiente;
                 valor = trabajo.Dato;
 
-                
+
             }
             return valor;
         }
@@ -65,19 +65,15 @@ namespace Pila_Cola.clases
         {
             trabajo = ancla;
 
-            while (trabajo.Siguiente !=null)
+            while (trabajo.Siguiente != null)
             {
                 trabajo = trabajo.Siguiente;
                 int d = trabajo.Dato;
-                Console.WriteLine("{[0]}",d);
+                Console.WriteLine("{[0]}", d);
             }
         }
 
-
-
-
+        
 
     }
-
-
 }

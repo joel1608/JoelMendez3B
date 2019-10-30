@@ -26,5 +26,6 @@ namespace Pila_Cola.clases
             return string.Format("{[0]}",dato);
         }
 
+      
     }
 }

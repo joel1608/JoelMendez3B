@@ -11,8 +11,24 @@ namespace Pila_Cola.clases
         public void ejerciciocola()
         {
             Cola cola = new Cola();
-            bool bon = true;
+            bool bon = true;int valor;
             do
+            {
+                valor = Menu();
+                switch (valor)
+                {
+                    case 1: cola.InsertarNodo(); break;
+                    case 2:
+                        cola.DesplegarCola(); break;
+                    case 3: bon = false; break;
+                    default:
+                        Console.WriteLine("Escoja la opción correcta");
+                        Console.ReadKey();
+                        break;
+                }
+            } while (bon);
+
+            int Menu()
             {
                 Console.Clear();
 
@@ -23,20 +39,10 @@ namespace Pila_Cola.clases
                 Console.WriteLine(" 2) Recorrer");
                 Console.WriteLine(" 3) Salir");
                 int opcion = int.Parse(Console.ReadLine());
+                return opcion;
+            }
 
-
-
-                switch (opcion)
-                {
-                    case 1: cola.InsertarNodo(); break;
-                    case 2: cola.DesplegarCola(); break;
-                    case 3: bon = false; break;
-                    default:
-                        Console.WriteLine("Escoja la opción correcta");
-                        Console.ReadKey();
-                        break;
-                }
-            } while (bon);
+            
         }
     }
 }
