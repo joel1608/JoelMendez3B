@@ -34,23 +34,23 @@ namespace FacturaGasolina.clase
             set { direccion = value; }
         }
 
-        private List<Gasolina> gasolina;
+        private List<Producto> producto;
 
-        public List<Gasolina> Gasolina
+        public List<Producto> Producto
         {
-            get { return gasolina; }
-            set { gasolina = value; }            
+            get { return producto; }
+            set { producto = value; }            
         }
 
         
 
-        public Cliente(string nombre, int identificacion, string direccion, List<Gasolina> gasolina)
+        public Cliente(string nombre, int identificacion, string direccion, List<Producto> producto)
         {
             
             Nombre = nombre;
             Identificacion = identificacion;
             Direccion = direccion;
-            Gasolina = gasolina;
+            Producto = producto;
            
         }
     }

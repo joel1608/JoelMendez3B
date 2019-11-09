@@ -44,8 +44,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="clase\Cliente.cs" />
-    <Compile Include="clase\Gasolina.cs" />
-    <Compile Include="Program.cs" />
+    <Compile Include="clase\Producto.cs" />
+    <Compile Include="Factura.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

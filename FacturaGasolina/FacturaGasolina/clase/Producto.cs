@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace FacturaGasolina.clase
 {
-    class Gasolina
+    class Producto
     {
         private string tipo;
 
@@ -67,9 +67,9 @@ namespace FacturaGasolina.clase
             get { return cliente; }
             set { cliente = value; }
         }
+       
 
-
-        public Gasolina(string tipo, int galones)
+        public Producto(string tipo, int galones)
         {
             Tipo = tipo;
             Galones = galones;
