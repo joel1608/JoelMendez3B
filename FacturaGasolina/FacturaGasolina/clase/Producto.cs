@@ -13,7 +13,9 @@ namespace FacturaGasolina.clase
         public string Tipo
         {
             get { return tipo; }
-            set {tipo = value;}
+            set {
+                tipo = value;
+                }
 
         }
 
@@ -22,7 +24,12 @@ namespace FacturaGasolina.clase
         public int Galones
         {
             get { return galones; }
-            set { galones = value; }
+            set {
+                if (value<1)
+                {
+                    throw new Exception("Ingres una cantidad correcta");
+                }
+                galones = value; }
         }
 
         private float precio;
@@ -67,13 +74,12 @@ namespace FacturaGasolina.clase
             get { return cliente; }
             set { cliente = value; }
         }
-       
 
-        public Producto(string tipo, int galones)
+        public Producto(string tipo, int galones, Cliente cliente)
         {
             Tipo = tipo;
             Galones = galones;
-        
+            Cliente = cliente;
         }
     }
 }
